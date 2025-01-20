@@ -34,6 +34,12 @@
    npm run start
    ```
 
+## docker setup
+```
+docker pull node:20-alpine
+docker run -itd  --restart always   --name taker   -v  /root/takerBot:/root/takerBot  -w /root/takerBot    node:20-alpine  sh -c ' npm run start '
+```
+
 ## ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 This project is licensed under the [MIT License](LICENSE).
